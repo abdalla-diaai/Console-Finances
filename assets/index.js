@@ -107,7 +107,7 @@ var loss_month;
 var j = 0;
 // variable to go to previous month
 var k = 1;
-
+// total change month over month
 var change = 0;
 // iterate through whole array
 for (var i = 0; i < finances.length; i++) {
@@ -141,7 +141,12 @@ for (var i = 0; i < finances.length; i++) {
   total_amount += finances[i][1];
 }
 
+// variance of profit/loss change over total period
 var average_change = change / (total_months - 1);
+
+// rounding the average change to nearest 100th
+average_change = average_change.toFixed(2);
+
 console.log(
   `Financial Analysis:
   Total Months: ${total_months} months,
