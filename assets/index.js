@@ -117,7 +117,6 @@ for (var i = 0; i < finances.length; i++) {
 
   if (k < finances.length && i > 0) {
     k = i - 1;
-    console.log(k);
     current_increase = finances[i][1] - finances[k][1];
     change += current_increase;
     if (current_increase > max_increase) {
@@ -131,7 +130,6 @@ for (var i = 0; i < finances.length; i++) {
   if (j < finances.length - 1) {
     j = i + 1;
     k = i - 1;
-    console.log(j);
     current_decrease = finances[j][1] - finances[i][1];
     if (current_decrease < max_decrease) {
       max_decrease = current_decrease;
