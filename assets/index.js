@@ -148,11 +148,6 @@ var average_change = change / (total_months - 1);
 average_change = average_change.toFixed(2);
 
 console.log(
-  `Financial Analysis:
-  Total Months: ${total_months} months,
-  Total: $${total_amount},
-  Average Change: $${average_change},
-  Greatest Increase in Profits/Losses: ${profit_month} ($${max_increase}),
-  Greatest Decrease in Profits/Losses: ${loss_month} ($${max_decrease})`
+  `Financial Analysis: \n Total Months: ${total_months} months. \n Total: $${total_amount}. \n Average Change: $${average_change}. \n Greatest Increase in Profits/Losses: ${profit_month} ($${max_increase}). \n Greatest Decrease in Profits/Losses: ${loss_month} ($${max_decrease}).`
 )
 
