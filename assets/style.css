@@ -47,9 +47,20 @@ figure {
     align-self: center;
 }
 
-@media screen and (max-width: 800px) {
-    p, ul, ol {
-        font-size: 14px;
+@media screen and (max-width: 860px) {
+    h1 {
+        font-size:1.5em
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1em;
+    }
+    p, ul, ol, figcaption {
+        font-size: 12px;
 
     }
     
