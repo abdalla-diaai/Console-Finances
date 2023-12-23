@@ -11,7 +11,7 @@ NA
 
 ## Usage
 
-To view the results shown on the html page, simply open the [DEPLOYED PAGE](https://abdalla-diaai.github.io/Console-Finances/) in the browser -> right click anywhere on the page -> click inspect -> open the console to print the results to the broswer console. 
+To view the results shown on the html page, simply open the [DEPLOYED PAGE](https://abdalla-diaai.github.io/console-finances/) in the browser -> right click anywhere on the page -> click inspect -> open the console to print the results to the broswer console. 
 
 ## Credit
 
