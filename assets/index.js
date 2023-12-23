@@ -89,29 +89,32 @@ var finances = [
 
 // total months are the same as array length
 var total_months = finances.length;
-// variable to hold sum of profit/loss
+
+// variables
+// hold sum of profit/loss
 var total_amount = 0;
-// variable to keep track of decrease with each iteration
+// keep track of decrease with each iteration
 var current_decrease = 0;
-// variable to keep track of increase with each iteration
+// keep track of increase with each iteration
 var current_increase = 0;
-// variable to keep track of current max_increase
+// keep track of current max_increase
 var max_increase = 0;
-// variable to keep track of current max_decrease
+// keep track of current max_decrease
 var max_decrease = 0;
-// variable to store profit month
+// store profit month
 var profit_month;
-// variable to store loss month
+// store loss month
 var loss_month;
-// variable to go to next month
+// go to next month
 var j = 0;
-// variable to go to previous month
+// go to previous month
 var k = 1;
 // total change month over month
 var change = 0;
+
+
 // iterate through whole array
 for (var i = 0; i < finances.length; i++) {
-
   // condition for profit
   // check if iteration still within array length
 
@@ -129,7 +132,6 @@ for (var i = 0; i < finances.length; i++) {
   // check if iteration still within array length
   if (j < finances.length - 1) {
     j = i + 1;
-    k = i - 1;
     current_decrease = finances[j][1] - finances[i][1];
     if (current_decrease < max_decrease) {
       max_decrease = current_decrease;
@@ -147,6 +149,7 @@ var average_change = change / (total_months - 1);
 // rounding the average change to nearest 100th
 average_change = average_change.toFixed(2);
 
+// backticks `` to log in variables in console log
 console.log(
   `Financial Analysis: \n Total Months: ${total_months} months. \n Total: $${total_amount}. \n Average Change: $${average_change}. \n Greatest Increase in Profits/Losses: ${profit_month} ($${max_increase}). \n Greatest Decrease in Profits/Losses: ${loss_month} ($${max_decrease}).`
 )
