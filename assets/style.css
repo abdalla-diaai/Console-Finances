@@ -48,6 +48,11 @@ figure {
 }
 
 @media screen and (max-width: 800px) {
+    p, ul, ol {
+        font-size: 14px;
+
+    }
+    
     #container {
         flex-wrap: wrap;
         justify-content: center;
@@ -55,5 +60,13 @@ figure {
 
     #results-section {
         flex-grow: 1;
+    }
+
+    figure, img {
+        max-width: 100%;
+    }
+
+    img:hover {
+        transform: scale(1.5);
     }
 }
