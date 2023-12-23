@@ -40,3 +40,10 @@ p, li {
 figure {
     align-self: center;
 }
+
+@media screen and (max-width: 800px) {
+    #container {
+        flex-grow: 1;
+    }
+    
+}
