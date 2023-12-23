@@ -1,28 +1,48 @@
 <!DOCTYPE html>
 <html lang="en-gb">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/style.css">
   <title>Finances</title>
-  
+
 </head>
+
 <body>
-  <h1>Open the Console to See the Magic ✨! </h1>
-  <div id="page-content">
-    <h2>Financial Analysis</h2>
-    <p>
-      Total Months: 86 </br>
-      Total: $38382578 </br>
-      Average Change: $-2315.12 </br>
-      Greatest Increase in Profits/Losses: Feb-2012 ($1926159) </br>
-      Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167) </br>
-    </p>
+  <h1>Financial Analysis</h1>
+  <div class="page-sections">
+    <h2>Overview</h2>
+    <p>Here, I wrote a JavaScript script to analyse financial records of a company with two fields; <em>Date and Profit/Losses</em>. The task is to caculate each of the following:</p>
+    <ol>
+      <li>The total number of months included in the dataset.</li>
+      <li>The net total amount of Profit/Losses over the entire period.</li>
+      <li>The average of the changes in Profit/Losses over the entire period.</li>
+      <li>The greatest increase in Profit/Losses (date and difference in the amounts) over the entire period.</li>
+      <li>The greatest decrease in Profit/Losses (date and difference in the amounts) over the entire period.</li>
+    </ol>
+  </div>
+
+<div id="container">
+  <div class="page-sections">
+    <h2>Results</h2>
+    <p>To see the results below, right click anywhere on the page -> click inspect -> open the console and the results will be printed to the browser. A screenshot of the expected results is on the right.</p>
+    <h3>Financial Analysis:</h3>
+    <ul>
+      <li>Total Months: 86 months.</li>
+      <li>Total: $38382578.</li>
+      <li>Average Change: $-2315.12.</li>
+      <li>Greatest Increase in Profits/Losses: Feb-2012 ($1926159).</li>
+      <li>Greatest Decrease in Profits/Losses: Sep-2013 ($-2196167).</li>
+    </ul>
   </div>
   <figure>
     <img src="assets/console-log-output.png" alt="screenshot of console log output.">
-    <figcaption>Screenshot of JasvaScript console log output.</figcaption>
+    <figcaption><strong>Figure.1:</strong> Screenshot of JasvaScript console log output.</figcaption>
   </figure>
+</div>
+ 
   <script src="assets/index.js"></script>
 </body>
+
 </html>
