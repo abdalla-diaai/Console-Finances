@@ -43,7 +43,8 @@ figure {
 
 @media screen and (max-width: 800px) {
     #container {
+        flex-wrap: wrap;
         flex-grow: 1;
+        justify-content: center;
     }
-    
-}
+}   
